@@ -4,7 +4,7 @@
 
 import { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import NavbarComponent from '@/components/Navbar';
+import NavbarComponent from '@/components/NavBar';
  
 export default function Counter() {
   const [count, setCount] = useState(0)
