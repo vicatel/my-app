@@ -1,0 +1,21 @@
+.vic {
+    background-color: sienna;
+    width: 100px;
+    height: 100px;
+}
+
+
+body{
+    background-color: rgb(0, 0, 0) !important;
+    /* background-color: blue !important; */
+}
+
+
+.vic::before {
+    content: "vic";
+    height: 200px;
+    background-color:salmon ;
+}   
+.vic ::after {
+    content: "vicoo";
+}

@@ -17,10 +17,12 @@ export default function Counter() {
         <>
             <NavbarComponent />
             <div className='px-5 my-5'>
-                <Title title="Projects" />
-           
+                <Title title="Contact" />
+               
 
+                <div className="vict" >
                 COMING SOON
+                </div>
 
             </div>
         </>

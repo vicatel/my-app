@@ -6,57 +6,67 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <div>
-    <main className={styles.main}>
-      
-      
-      <div className={styles.description}>
-        <p>
-          This website is a work in progress :)&nbsp;
-          <code className={styles.code}>Good Things Take Time</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {/* By{" "} */}
-            <Image
-              src="/avatar.svg"
-              alt="Avatar"
-              // fill
-              className={styles.avatar}
-              width={220}
-              height={220}
-              // sizes="(max-width: 702px) 3vw, (max-width: 1200px) 5vw, 10vw"
-              priority
-            />
-          </a>
+      <main className={styles.main}>
+
+
+        <div className={styles.description}>
+          <p>
+            This website is a work in progress.&nbsp;
+            <code className={styles.code}>Good Things Take Time :)</code>
+
+            {/* <hr /> */}
+            {/* <small>This web app was designed with Figma. Figma was also used to make and export components.
+              I will be adding my projects, tutorials, certifications, and other things I have done in the past.
+            </small> */}
+          </p>
+          <div>
+            <a
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {/* By{" "} */}
+              <Image
+                src="/avatar.svg"
+                alt="Avatar"
+                // fill
+                className={styles.avatar}
+                width={220}
+                height={220}
+                // sizes="(max-width: 702px) 3vw, (max-width: 1200px) 5vw, 10vw"
+                priority
+
+              />
+            </a>
+          </div>
         </div>
-      </div>
-      {/* <div className={styles.center}>
+        {/* <div className={styles.center}>
     Hello There
       </div> */}
-      <div className={styles.center}>
-    Built with &nbsp; &nbsp;
-      
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
 
 
-      <div>
-      
+       
+        <div className={styles.center}>
+          Built with &nbsp; &nbsp;
 
-      </div>
+          <Image
+            className={styles.logo}
+            src="/next.svg"
+            alt="Next.js Logo"
+            width={180}
+            height={37}
+            priority
+          />
 
-      <div className={styles.grid}>
+        </div>
+
+
+        <div>
+
+
+        </div>
+
+        {/* <div className={styles.grid}>
         <a
           href=""
           className={styles.card}
@@ -70,9 +80,62 @@ export default function Home() {
             I will be adding my projects, tutorials, certifications, and other things I have done in the past.
           </p>
         </a>
+      </div> */}
+       <small className={styles.smallText}> This web app was designed with Figma and Bootstrap. Figma was also used to make and export components. 
+          <br />
+          I will be adding my projects, tutorials, certifications, and other relevant things I have done in the past.
+        </small>
 
-      </div>
-    </main>
+        <div className={styles.grid}>
+          <a
+            href="/projects"
+            className={styles.card}
+            rel="noopener noreferrer"
+          >
+            <h2>
+              Projects <span>-&gt;</span>
+            </h2>
+
+          </a>
+
+          <a
+            href="/certificates"
+            className={styles.card}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h2 style={{ width: "165px" }}>
+              Certicates <span>-&gt;</span>
+            </h2>
+
+          </a>
+
+          <a
+            href="res.pdf"
+            className={styles.card}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h2>
+              Resume <span>-&gt;</span>
+            </h2>
+
+          </a>
+
+          <a
+            href=""
+            className={styles.card}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h2>
+              Contact <span>-&gt;</span>
+            </h2>
+
+          </a>
+        </div>
+       
+      </main>
     </div>
   );
 }
