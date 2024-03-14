@@ -12,7 +12,7 @@ const NavbarComponent = () => {
       <Navbar.Brand className='text-light'  href="/">
       <Image
           className=""
-          src="/avatar.svg"
+          src="/avi.svg"
           alt="Next.js Logo"
           width={60}
           height={60}

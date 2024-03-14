@@ -27,7 +27,7 @@ export default function Home() {
             >
               {/* By{" "} */}
               <Image
-                src="/avatar.svg"
+                src="/avi.svg"
                 alt="Avatar"
                 // fill
                 className={styles.avatar}
