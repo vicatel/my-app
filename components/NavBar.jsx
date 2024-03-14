@@ -26,7 +26,7 @@ const NavbarComponent = () => {
           <Nav.Link className="mx-3" href="/">Home</Nav.Link>
           <Nav.Link className="mx-3" href="/projects">Projects</Nav.Link>
           <Nav.Link className="mx-3" href="/certificates">Certificates</Nav.Link>
-          <Nav.Link className="mx-3" href="res.pdf">Resume</Nav.Link>
+          <Nav.Link className="mx-3" href="">Resume</Nav.Link>
           <Nav.Link className="mx-3" href="/contact">Contact</Nav.Link>
           {/* <NavDropdown className='text-light'  title="Dropdown" id="basic-nav-dropdown">
             <NavDropdown.Item className='text-light' href="#action/3.1">Action</NavDropdown.Item>
