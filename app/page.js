@@ -111,7 +111,7 @@ export default function Home() {
           </a>
 
           <a
-            href="res.pdf"
+            href=""
             className={styles.card}
             target="_blank"
             rel="noopener noreferrer"
