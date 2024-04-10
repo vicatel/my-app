@@ -58,7 +58,7 @@ body{
     /* background-color: rebeccapurple; */
     /* border: 0.1em dotted red; */
     box-shadow: 1px 1px 2px 0px rgba(13, 26, 66, 0.95);
-
+padding-left: 0px;
     border-radius: 10px;
   }
 
