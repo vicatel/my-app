@@ -1,5 +1,5 @@
 .vic {
-    background-color: sienna;
+    /* background-color: sienna; */
     width: 100px;
     height: 100px;
 }
@@ -11,11 +11,132 @@ body{
 }
 
 
-.vic::before {
-    content: "vic";
-    height: 200px;
-    background-color:salmon ;
-}   
-.vic ::after {
-    content: "vicoo";
+
+
+.vic {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 30%;
+    left: 10%;
+    padding: 4rem 0;
+    z-index: -1;
+
+  }
+  
+  .vic::before {
+    background: var(--primary-glow);
+    /* border-radius: 50%; */
+    width: 500px;
+    height: 300px;
+    margin-left: 200px;
+    /* margin-top: 50%; */
+  }
+  
+  .vic::after {
+    background: var(--primary-glow);
+    width: 240px;
+    height: 180px;
+    z-index: -1;
+    margin-top: 50%;
+
+  }
+  
+  .vic::before,
+  .vic::after {
+    content: "";
+    left: 50%;
+    position: absolute;
+    filter: blur(45px);
+    transform: translateZ(0);
+  }
+
+ .row > div {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    /* background-color: rebeccapurple; */
+    /* border: 0.1em dotted red; */
+    box-shadow: 1px 1px 2px 0px rgba(13, 26, 66, 0.95);
+
+    border-radius: 10px;
+  }
+
+  .project {
+    border: 3px solid rgba(1, 11, 74, 0.757);
+    border-radius: 5px;
+    transition: box-shadow 0.3s;
+  }
+
+  .project:hover {
+    box-shadow: 0 0  10px 10px rgba(38, 69, 154, 0.95);
+
+    /* transform: scale(1.05); */
+    /* background-color: red;  */
+  }
+  
+
+
+  .container {
+    margin-left: 10px !important;
+  }
+
+  details > summary {
+    padding: 4px;
+    width: 200px;
+    /* background-color: black; */
+    border: none;
+    /* box-shadow: 1px 1px 2px #bbbbbb; */
+    cursor: pointer;
+  }
+  
+  details > p {
+    /* background-color: black; */
+    padding: 4px;
+    margin: 0;
+    /* box-shadow: 1px 1px 2px #bbbbbb; */
+  }
+
+
+  .image-container {
+    display: inline-block;
+    /* overflow: hidden;  */
+    
+    
+    /* Prevents image overflow */
+  }
+  
+  .zoom-image {
+    transition: transform 0.3s;
+    max-width: 100%;
+    max-height: 100%; /* Smooth transition effect */
+  }
+  
+  .zoom-image:hover {
+    transform: scale(2); /* Zoom in by 10% */
+    padding-right: 10%;
+  }
+
+ 
+  a{
+    text-decoration: none !important;
+    color: whitesmoke !important;
+    transition: color 0.3s ease !important;
+}
+
+a:hover{
+    color: rgba(38, 69, 154, 0.95) !important;
+    text-decoration: underline !important;
+    text-underline-offset: 5px !important;
+    text-decoration-color: rgba(38, 69, 154, 0.95) !important;
+}
+
+
+
+.navbar-collapse {
+    padding-left: 30%;
+}
+
+svg {
+    height: 20px !important;
 }
