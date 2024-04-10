@@ -140,3 +140,8 @@ a:hover{
 svg {
     height: 20px !important;
 }
+
+.alert-light {
+    background-color: rgba(38, 69, 154, 0.95) !important;
+    color: white !important;
+}
