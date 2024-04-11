@@ -1,4 +1,4 @@
-import { Inter } from "next/font/google";
+import { Inter, Eagle_Lake } from "next/font/google";
 import "../styles/globals.css";
 import 'boxicons/css/boxicons.min.css';
 
@@ -12,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className }>{children}</body>
     </html>
   );
 }

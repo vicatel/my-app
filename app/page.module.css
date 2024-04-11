@@ -118,11 +118,29 @@
   font-size: 0.6rem;
 }
 
+.hello {
+
+  font-size: 2.5rem;
+}
+
+.avatar {
+  animation: rotate 2s linear 1;
+}
+
+.card {
+  transition: transform 0.5s;
+  transition: color 0.5s ease;
+}
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
     background: rgba(var(--card-rgb), 0.1);
+    color: rgba(38, 69, 154, 0.95) ;
+    border-radius: 5px;
     border: 1px solid rgba(var(--card-border-rgb), 0.15);
+    transform: translateY(-8px);
+
   }
 
   .card:hover span {
@@ -210,6 +228,15 @@
       rgb(var(--background-end-rgb)) 40%
     );
     z-index: 1;
+  }
+
+  .center {
+    padding-top: 25px;
+  }
+  .hello {
+    margin: 20px 0px;
+    padding: 10px 0px;
+    font-size: 1.6em;
   }
 }
 

@@ -4,7 +4,7 @@
 
 import { useState } from 'react'
 
-import "../../styles/test.css";
+import "../../styles/primary.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavbarComponent from '@/components/NavBar';
 import Title from '@/components/Title';
@@ -17,7 +17,7 @@ export default function Counter() {
         <>
             <NavbarComponent />
             <div className='px-5 my-5'>
-                <Title title="Contact" />
+                <Title title="Skills" />
                
 
                 <div className="vict" >

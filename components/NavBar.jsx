@@ -3,6 +3,11 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Image from "next/image";
+import { Happy_Monkey  } from "next/font/google";
+
+
+const hm = Happy_Monkey({ subsets: ["latin"], weight: '400' });
+
 
 
 const NavbarComponent = () => {
@@ -13,7 +18,7 @@ const NavbarComponent = () => {
       <Image
           className=""
           src="/avi.svg"
-          alt="Next.js Logo"
+          alt="VT avatar"
           width={60}
           height={60}
           priority
@@ -22,12 +27,13 @@ const NavbarComponent = () => {
       </Navbar.Brand>
       <Navbar.Toggle className='text-light'  aria-controls="basic-navbar-nav" />
       <Navbar.Collapse className='text-light'  id="basic-navbar-nav">
-        <Nav  className="me-auto text-light">
-          <Nav.Link className="mx-3" href="/">Home</Nav.Link>
+        {/* <Nav  className={hm.className + " me-auto text-light"} > */}
+        <Nav  className={ + " me-auto text-light"} >
+          {/* <Nav.Link className="mx-3" href="/">Home</Nav.Link> */}
           <Nav.Link className="mx-3" href="/projects">Projects</Nav.Link>
           <Nav.Link className="mx-3" href="/certificates">Certificates</Nav.Link>
           <Nav.Link className="mx-3" href="">Resume</Nav.Link>
-          <Nav.Link className="mx-3" href="/contact">Contact</Nav.Link>
+          <Nav.Link className="mx-3" href="/contact">Skills</Nav.Link>
           {/* <NavDropdown className='text-light'  title="Dropdown" id="basic-nav-dropdown">
             <NavDropdown.Item className='text-light' href="#action/3.1">Action</NavDropdown.Item>
             <NavDropdown.Item className='text-light'  href="#action/3.2">

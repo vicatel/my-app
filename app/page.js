@@ -25,7 +25,6 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {/* By{" "} */}
               <Image
                 src="/avi.svg"
                 alt="Avatar"
@@ -33,16 +32,17 @@ export default function Home() {
                 className={styles.avatar}
                 width={220}
                 height={220}
-                // sizes="(max-width: 702px) 3vw, (max-width: 1200px) 5vw, 10vw"
                 priority
 
               />
             </a>
           </div>
         </div>
-        {/* <div className={styles.center}>
-    Hello There
-      </div> */}
+
+        <div className={styles.hello} >
+    Hello, I'm <span style={{color: "rgba(31,57,137,1)", fontWeight: "bold", }}>Victor!</span> 
+    {/* Hello, I'm <span style={{color: "rgba(26,47,113,1)", fontWeight: "bold", }}>Victor!</span>  */}
+      </div>
 
 
        
