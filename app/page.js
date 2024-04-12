@@ -101,7 +101,7 @@ export default function Home() {
           <a
             href="/certificates"
             className={styles.card}
-            target="_blank"
+            
             rel="noopener noreferrer"
           >
             <h2 style={{ width: "165px" }}>
@@ -111,9 +111,9 @@ export default function Home() {
           </a>
 
           <a
-            href=""
+            href="/plans"
             className={styles.card}
-            target="_blank"
+            
             rel="noopener noreferrer"
           >
             <h2>
@@ -123,9 +123,9 @@ export default function Home() {
           </a>
 
           <a
-            href=""
+            href="/skills"
             className={styles.card}
-            target="_blank"
+            
             rel="noopener noreferrer"
           >
             <h2>
