@@ -117,7 +117,7 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <h2>
-              Resume <span>-&gt;</span>
+              Plans <span>-&gt;</span>
             </h2>
 
           </a>
@@ -129,7 +129,7 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <h2>
-              Contact <span>-&gt;</span>
+              Skills <span>-&gt;</span>
             </h2>
 
           </a>

@@ -106,6 +106,49 @@ html {
 
 
 
+.blur {
+  width: 150px;
+  height: 100px;
+}
+
+.blur {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 30%;
+  left: 10%;
+  padding: 4rem 0;
+  z-index: -1;
+
+}
+
+.blur::before {
+  background: var(--primary-glow);
+  width: 500px;
+  height: 300px;
+  margin-left: 200px;
+}
+
+.blur::after {
+  background: var(--primary-glow);
+  width: 240px;
+  height: 180px;
+  z-index: -1;
+  margin-top: 50%;
+
+}
+
+.blur::before,
+.blur::after {
+  content: "";
+  left: 50%;
+  position: absolute;
+  filter: blur(45px);
+  transform: translateZ(0);
+}
+
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

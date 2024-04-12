@@ -1,6 +1,6 @@
 
 
-const ProjectCard = ({title, tech, details}) => {
+const ProjectCard = ({title, tech, details, path}) => {
     return (
         <>
             
@@ -31,7 +31,7 @@ const ProjectCard = ({title, tech, details}) => {
                                         </details>
                                     </div>
                                     <div className="col-6">
-                                        <a href="https://i.imgur.com/3sST4dm.gif" target='_blank'>
+                                        <a href={path} target='_blank'>
                                             View Full Gif {" "}
                                             <i className="bx bx-link-external"></i>
                                         </a>
@@ -45,8 +45,8 @@ const ProjectCard = ({title, tech, details}) => {
                             </div>
                             <div className=" col-md-4">
                                 <div className="image-container">
-                                    <small className='fst-italic'> hover to enlarge gif </small>
-                                    <img src="https://i.imgur.com/3sST4dm.gif" alt="Image" className="zoom-image" />
+                                    <small className='fst-italic'> hover to enlarge gif (desktop) </small>
+                                    <img src={path} alt="Image" className="zoom-image" />
                                 </div>
                             </div>
                         </div>
