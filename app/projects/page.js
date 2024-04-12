@@ -8,12 +8,16 @@ import "../../styles/primary.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavbarComponent from '@/components/NavBar';
 import Title from '@/components/Title';
+import ProjectCard from '@/components/Project';
 
-export default function Project() {
+export default function Projects() {
 
     return (
 
+
+
         <>
+
             <NavbarComponent />
             <div className='px-5 my-5 text-light' >
                 <Title title="Projects" />
@@ -22,6 +26,17 @@ export default function Project() {
                 <div className='blur' >
                 </div>
 
+
+                <ProjectCard title={"Chatbot App"} tech={"NextJS, Flask for Python backend"} details={"School project to make a fullstack app."} />
+
+                <ProjectCard title={"Simple Flashcard App"} tech={"Reach,ViteJS"}
+                    details={"I simply followed instructions to create an app that has these features. (from CodePath)"} />
+
+                <ProjectCard title={"Rockets API App"} tech={"React, ViteJS"}
+                    details={"I simply followed instructions to create an app that has these features. (from CodePath)"} />
+
+
+
                 <div className="alert alert-light d-flex align-items-center w-75 mb-4" role="alert">
                     <svg xmlns="http://www.w3.org/2000/svg" className="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">
 
@@ -29,63 +44,9 @@ export default function Project() {
 
                     </svg>
                     <div>
-                        Still experimenting to create a reusable component for all projects.
+                        Reusable Components...very cool <i class='bx bxs-cool'> </i>
                     </div>
                 </div>
-
-
-
-                <div className="project">
-                    <div className="container  text-center ">
-                        <div className="row ">
-                            <div className="col-md-8">
-
-                                <div className="row ">
-                                    <div className="col rounded">
-                                        <p style={{ display: 'block' }}>Simple Flashcard App</p>
-                                        {/* <div className="p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
-                                        <p style={{ display: 'block' }}>This is a block-level paragraph.</p>
-                                    </div> */}
-                                    </div>
-                                </div>
-                                <div className="row ">
-                                    <div className="col">
-                                        React, ViteJS
-                                    </div>
-                                    {/* <div className="col-6">.col-6</div> */}
-                                </div>
-                                <div className="row ">
-                                    <div className="col-6">
-                                        <details>
-                                            <summary>More Details</summary>
-                                            <p>I simply followed instructions to create an app that has these features. (from CodePath)</p>
-                                        </details>
-                                    </div>
-                                    <div className="col-6">
-                                        <a href="https://i.imgur.com/3sST4dm.gif" target='_blank'>
-                                            View Full Gif {" "}
-                                            <i className="bx bx-link-external"></i>
-                                        </a>
-                                    </div>
-                                </div>
-
-
-
-
-                            </div>
-                            <div className=" col-md-4">
-                                <div className="image-container">
-                                    <small className='fst-italic'> hover to enlarge gif </small>
-                                    <img src="https://i.imgur.com/3sST4dm.gif" alt="Image" className="zoom-image" />
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-
-
 
             </div>
         </>
