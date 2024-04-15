@@ -187,3 +187,8 @@ html {
     padding-left: 0% !important;
   }
 }
+@media (min-width: 1650px) and (max-width: 2200px)  {
+  .navbar-collapse {
+    padding-left: 40% !important;
+  }
+}

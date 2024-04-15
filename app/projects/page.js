@@ -21,10 +21,10 @@ export default function Projects() {
 
                 <ProjectCard title={"Chatbot App"} tech={"NextJS, Flask for Python backend, MySQL to store info"} details={"Made a fullstack app for a school project."} path={"files/chatbot.gif"} />
 
-                <ProjectCard title={"Simple Flashcard App"} tech={"Reach,ViteJS"}
+                <ProjectCard title={"Simple Flashcard "} tech={"Reach,ViteJS"}
                     details={"Simple React Components (from CodePath)"} path={"files/flashcard.gif"}/>
 
-                <ProjectCard title={"Rockets API App"} tech={"React, ViteJS"}
+                <ProjectCard title={"Rockets API"} tech={"React, ViteJS"}
                     details={"Using Routes and Making API calls"} path={"files/rocket.gif"}/>
 
                 <div className="alert alert-light d-flex align-items-center  mb-4" role="alert">
@@ -34,7 +34,7 @@ export default function Projects() {
 
                     </svg>
                     <div>
-                        Reusable Components...very cool <i class='bx bxs-cool'> </i>
+                        Reusable Components...very cool <i className='bx bxs-cool'> </i>
                     </div>
                 </div>
 

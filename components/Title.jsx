@@ -28,7 +28,8 @@ const hm = Happy_Monkey({ subsets: ["latin"], weight: '400' });
 const Title = (props) => {
     return (<>
         {/* <h1 style={{color: "#253976", fontWeight: "bold" }} className={hm.className + "  "}>{props.title}</h1> */}
-        <h1 style={{color: "rgba(37,57,118,1)", fontWeight: "bolder" }} className={hm.className + "  "}>{props.title}</h1>
+        {/* <h1 style={{color: "rgba(37,57,118,1)", fontWeight: "bolder" }} className={hm.className + "  "}>{props.title}</h1> */}
+        <h1 style={{color: "#707faf", fontWeight: "bolder" }} className={hm.className + "  "}>{props.title}</h1>
         {/* <h1 className={ + "text-light"}>{props.title}</h1> */}
        
         

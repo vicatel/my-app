@@ -5,9 +5,11 @@
 import { useState } from 'react'
 
 import "../../styles/primary.css";
+import "../../styles/cert.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavbarComponent from '@/components/NavBar';
 import Title from '@/components/Title';
+import CertificateCard from '@/components/CertificateCard';
 
 export default function Counter() {
     const [count, setCount] = useState(0)
@@ -16,12 +18,12 @@ export default function Counter() {
 
         <>
             <NavbarComponent />
-            <div className='px-5 my-5'>
-                <Title title="Upcoming Projects" />
+            <div className='px-5 my-5 text-light'>
+                <Title title="Plans" />
 
 
                 <div className="vict text-light" >
-                    COMING SOON
+                    MORE COMING SOON
                 </div>
 
                 <div className={"project my-5"} >
@@ -57,6 +59,11 @@ export default function Counter() {
                         </div>
                     </div>
                 </div>
+
+                <CertificateCard title={"Meta Database Engineer- Certificate"} details={"Covers Database structure"} progress={2} />
+                
+
+
 
                 <div className="alert alert-light d-flex align-items-center  mb-4" role="alert">
                     <svg xmlns="http://www.w3.org/2000/svg" className="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">

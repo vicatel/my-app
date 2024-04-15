@@ -22,9 +22,9 @@ export default function Certificates() {
             <div className='px-5 my-5 text-light' >
                 <Title title="Certificates" />
                 <div className='blur' > </div>
-                <CertificateCard title={"IBM Full-Stack Software Developer Professional Certificate"} details={"Covers Software Engineering Fundamentals, GitHub, React, NodeJS, MongoDB Express, Agile Development, Containers, Microservices & Serverless"} progress={70} />
+                <CertificateCard title={"IBM Full-Stack Software Developer Professional Certificate"} details={"Covers Software Engineering Fundamentals, GitHub, React, NodeJS, MongoDB Express, Agile Development, Containers, Microservices & Serverless"} progress={90} />
                 <CertificateCard title={"Google Foundations of Project Management"} details={"Covers Project Management Lifecycle and Methodologies"} progress={20} />
-                <CertificateCard title={"Google Database Developer"} details={""} progress={0} />
+                <CertificateCard title={"Introduction to Modern Web Development with ASP.NET Core by EDUCBA"} details={"Covers core concepts and features of ASP.NET Core, Entity Framework Core for data access and management"} progress={50} />
                 <Title title="Completed" />
                 <CertificateCard title={"Cloud Web Apps Development"} details={"Covers Cloud deployment, GCP, Firebase tools and management"} progress={100} />
                 <CertificateCard title={"AWS Cloud Practictioner"} details={"Covers AWS tools and management"} progress={100} />
