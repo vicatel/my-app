@@ -28,7 +28,7 @@ export default function Projects() {
                 <Title title="Projects" />
                 <div className='blur' > </div>
 
-                <ProjectCard title={"Surprise Me!"} tech={"NextJS, PostgreSQL to store info, Supabase (Backend as a Service)"} details={"Lightweight fullstack app for friends & family."} path={"files/surprise.gif"} git={"https://github.com/vicatel/surprise-me.git"} id={"mobile"} />
+                <ProjectCard title={"Surprise Me!"} tech={"NextJS, PostgreSQL to store info, Supabase (Backend as a Service)"} details={"Lightweight fullstack app for friends & family."} path={"files/surprise.gif"} git={"https://github.com/vicatel/surprise-me-public.git"} id={"mobile"} />
 
                 <ProjectCard title={"Chatbot App"} tech={"NextJS, Flask for Python backend, MySQL to store info"} details={"Made a fullstack app for a school project."} path={"files/chatbot.gif"} git={"https://github.com/vicatel/seii-project.git"}/>
 
