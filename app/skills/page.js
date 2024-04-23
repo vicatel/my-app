@@ -46,12 +46,6 @@ export default function Skills() {
                         <br />
                         <br />
                         <br />
-                        <strong>
-                            TECHNICAL SKILLS
-                        </strong>
-
-                        : Linux CLI, GitHub, Agile Methodologies, MS Excel, Web Design
-                        <br />
 
                         <strong>
                             PROGRAMMING LANGUAGES
@@ -59,6 +53,14 @@ export default function Skills() {
 
                         : Python, JavaScript, TypeScript, HTML, CSS, C#, SQL, Dart
                         <br />
+                        <strong>
+                            OTHER SKILLS
+                        </strong>
+
+                        : Linux CLI, GitHub, Agile Methodologies, MS Excel, Web Design
+                        <br />
+
+                      
                         <strong>
                             SOFT SKILLS
                         </strong>

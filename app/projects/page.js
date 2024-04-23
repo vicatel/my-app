@@ -37,14 +37,13 @@ export default function Projects() {
 
                 {/* <Fade cascade={true} damping={0.1} duration={5000}> */}
                 <Zoom triggerOnce={true}>
-                    <ProjectCard title={"Surprise Me!"} tech={"NextJS, PostgreSQL to store info, Supabase (Backend as a Service)"} details={"Lightweight fullstack app for friends & family."} path={"files/surprise.gif"} git={"https://github.com/vicatel/surprise-me-public.git"} id={"mobile"} show={() => setModalShow(true)}/>
+                    <ProjectCard title={"Surprise Me!"} tech={"NextJS, PostgreSQL to store info, Supabase (Backend as a Service)"} details={"Lightweight fullstack app for friends & family."} path={"files/surprise.gif"} git={"https://github.com/vicatel/surprise-me-public.git"} id={"mobile"} show={() => setModalShow(true)} />
                     <ProjectCard title={"Chatbot App"} tech={"NextJS, Flask for Python backend, MySQL to store info"} details={"Made a fullstack app for a school project."} path={"files/chatbot.gif"} git={"https://github.com/vicatel/seii-project.git"} show={() => setModalShow(true)} />
 
                     <ProjectCard title={"Simple Flashcards"} tech={"Reach,ViteJS"}
                         details={"Simple React Components (from CodePath)"} path={"files/flashcard.gif"} show={() => setModalShow(true)} />
 
-                    <ProjectCard title={"Rockets API"} tech={"React, ViteJS"}
-                        details={"Using Routes and Making API calls"} path={"files/rocket.gif"} show={() => setModalShow(true)} />
+
 
                 </Zoom>
                 <div className="alert alert-light d-flex align-items-center  mb-4" role="alert">
@@ -56,7 +55,8 @@ export default function Projects() {
                     </div>
                 </div>
                 <Title title="Other Projects, Relevant tutorials & Lessons Learned" />
-                COMING SOON
+                <ProjectCard title={"Rockets API"} tech={"React, ViteJS"}
+                    details={"Using Routes and Making API calls"} path={"files/rocket.gif"} show={() => setModalShow(true)} />
             </div>
 
 
