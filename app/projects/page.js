@@ -12,10 +12,20 @@ import ProjectCard from '@/components/Project';
 import VerticalModal from '@/components/VerticalModal';
 
 
+import { Fade, Hinge, Bounce, Flip, JackInTheBox, Roll, Rotate, Slide, Zoom } from "react-awesome-reveal";
+
 
 export default function Projects() {
 
     const [modalShow, setModalShow] = useState(false);
+
+    // document.body.style.backgroundColor = isChecked ? 'black' : 'white';
+    // TO-DO
+    // light mode
+    // About Me
+    // Cool bg action for components
+    // make titles cooler, maybe same radial gradient stuff
+    // navbar to the right?
 
     return (
         <>
@@ -24,22 +34,27 @@ export default function Projects() {
             }}>click</button> */}
             <NavbarComponent />
 
-            <div className='px-5 my-5 text-light' >
+            <div className='px-5 my-3 text-light' >
                 <Title title="Projects" />
                 <div className='blur' > </div>
 
-                <ProjectCard title={"Surprise Me!"} tech={"NextJS, PostgreSQL to store info, Supabase (Backend as a Service)"} details={"Lightweight fullstack app for friends & family."} path={"files/surprise.gif"} git={"https://github.com/vicatel/surprise-me-public.git"} id={"mobile"} />
+                {/* <Fade cascade={true} damping={0.1} duration={5000}> */}
+                <Zoom triggerOnce={true}>
+                    <ProjectCard title={"Surprise Me!"} tech={"NextJS, PostgreSQL to store info, Supabase (Backend as a Service)"} details={"Lightweight fullstack app for friends & family."} path={"files/surprise.gif"} git={"https://github.com/vicatel/surprise-me-public.git"} id={"mobile"} show={() => setModalShow(true)}/>
+                    <ProjectCard title={"Chatbot App"} tech={"NextJS, Flask for Python backend, MySQL to store info"} details={"Made a fullstack app for a school project."} path={"files/chatbot.gif"} git={"https://github.com/vicatel/seii-project.git"} show={() => setModalShow(true)} />
 
-                <ProjectCard title={"Chatbot App"} tech={"NextJS, Flask for Python backend, MySQL to store info"} details={"Made a fullstack app for a school project."} path={"files/chatbot.gif"} git={"https://github.com/vicatel/seii-project.git"}/>
+                    <ProjectCard title={"Simple Flashcards"} tech={"Reach,ViteJS"}
+                        details={"Simple React Components (from CodePath)"} path={"files/flashcard.gif"} show={() => setModalShow(true)} />
 
-                <ProjectCard title={"Simple Flashcards"} tech={"Reach,ViteJS"}
-                    details={"Simple React Components (from CodePath)"} path={"files/flashcard.gif"} />
+                    <ProjectCard title={"Rockets API"} tech={"React, ViteJS"}
+                        details={"Using Routes and Making API calls"} path={"files/rocket.gif"} show={() => setModalShow(true)} />
 
-                <ProjectCard title={"Rockets API"} tech={"React, ViteJS"}
-                    details={"Using Routes and Making API calls"} path={"files/rocket.gif"} />
+                </Zoom>
+                {/* </Fade> */}
+
 
                 <div className="alert alert-light d-flex align-items-center  mb-4" role="alert">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="bi bi-exclamation-triangle-fill flex-shrink-0 me-2 alert-svg" viewBox="0 0 16 16" role="img" aria-label="Warning:">
                         <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
                     </svg>
                     <div>
@@ -53,27 +68,31 @@ export default function Projects() {
 
             <VerticalModal
                 show={modalShow}
-                onHide={() => setModalShow(false)}
+                onHide={() => setModalShow(false)
+                }
                 backdrop="static"
                 text={<>
-                    Our address verification service has detected and made some suggested corrections to your address.
+                    To-do:
                     <br />
-                    Please confirm the selection below.
-                    <hr />
-                    <strong> Suggested Address : </strong>
-                    <br />
-                    <hr />
-                    <button className="btn btn-dark"
-                        onClick={(e) => {
-                            router.push(`/longform/id-info/${id}`);
-                        }}>
-                        Use Suggested Address
-                    </button>
+                    Add product backlog, figma design, other designs, thought process, problem-solution, etc.
                 </>} />
         </>
     )
 }
 
+// Our address verification service has detected and made some suggested corrections to your address.
+// <br />
+// Please confirm the selection below.
+// <hr />
+// <strong> Suggested Address : </strong>
+// <br />
+// <hr />
+// <button className="btn btn-dark"
+//     onClick={(e) => {
+//         router.push(`/longform/id-info/${id}`);
+//     }}>
+//     Use Suggested Address
+// </button>
 
 
 

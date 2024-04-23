@@ -1,7 +1,8 @@
+'use client'
+
 import Image from "next/image";
 import styles from "./page.module.css";
-
-
+import { Typewriter } from 'typewriting-react';
 
 export default function Home() {
   return (
@@ -40,12 +41,15 @@ export default function Home() {
         </div>
 
         <div className={styles.hello} >
-    Hello, I'm <span style={{color: "rgba(31,57,137,1)", fontWeight: "bold", }}>Victor!</span> 
-    {/* Hello, I'm <span style={{color: "rgba(26,47,113,1)", fontWeight: "bold", }}>Victor!</span>  */}
-      </div>
+          Hello, I'm <span style={{ color: "#707faf", fontWeight: "bold", }}>Victor!</span>
+          {/* Hello, I'm <span style={{ color: "rgba(31,57,137,1)", fontWeight: "bold", }}>Victor!</span> */}
+          {/* Hello, I'm <span style={{color: "rgba(26,47,113,1)", fontWeight: "bold", }}>Victor!</span>  */}
+        </div>
+        <Typewriter words={['Software Developer', 'UX Designer', 'Funny guy (sometimes)']} cursorClassName="cursor" erasingSpeed={35} nextWordDelay={1200} loop={false}/>
 
 
-       
+
+
         <div className={styles.center}>
           Built with &nbsp; &nbsp;
 
@@ -81,7 +85,7 @@ export default function Home() {
           </p>
         </a>
       </div> */}
-       <small className={styles.smallText}> This web app was designed with Figma and Bootstrap. Figma was also used to make and export components. 
+        <small className={styles.smallText}> This web app was designed with Figma and Bootstrap. Figma was also used to make and export components.
           <br />
           I will be adding my projects, tutorials, certifications, and other relevant things I have done in the past.
         </small>
@@ -101,7 +105,7 @@ export default function Home() {
           <a
             href="/certificates"
             className={styles.card}
-            
+
             rel="noopener noreferrer"
           >
             <h2 style={{ width: "165px" }}>
@@ -113,7 +117,7 @@ export default function Home() {
           <a
             href="/plans"
             className={styles.card}
-            
+
             rel="noopener noreferrer"
           >
             <h2>
@@ -125,7 +129,7 @@ export default function Home() {
           <a
             href="/skills"
             className={styles.card}
-            
+
             rel="noopener noreferrer"
           >
             <h2>
@@ -134,9 +138,9 @@ export default function Home() {
 
           </a>
 
-       
+
         </div>
-       
+
       </main>
     </div>
   );

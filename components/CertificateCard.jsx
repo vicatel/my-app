@@ -3,7 +3,7 @@ import { Happy_Monkey } from "next/font/google";
 
 const hm = Happy_Monkey({ subsets: ["latin"], weight: '400' });
 
-const CertificateCard = ({ title, details, progress }) => {
+const CertificateCard = ({ title, details, progress, done }) => {
 
 
     return (
@@ -24,9 +24,10 @@ const CertificateCard = ({ title, details, progress }) => {
                                         <p>{details}</p>
                                     </details>
 
+                                   {!done && 
                                     <div className="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                                         <div className="progress-bar" style={{width: `${progress}%`}}>{progress}% complete</div>
-                                    </div>
+                                    </div>}
                                 </div>
                             </div>
 

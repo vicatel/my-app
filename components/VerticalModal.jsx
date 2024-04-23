@@ -21,14 +21,14 @@ function VerticallyCenteredModal(props) {
             {/* <Modal.Header closeButton className={` ${styles.darkblue}`} > */}
             <Modal.Header closeButton className={` `} >
                 <Modal.Title id="contained-modal-title-vcenter" >
-                    Thank You!
+                    Thanks for Checking!
                 </Modal.Title>
             </Modal.Header>
             <Modal.Body style={{ wordWrap: "break-word" }}>
                 {props.text}
             </Modal.Body>
             <Modal.Footer>
-                <Button onClick={props.onHide} className={` `}>Close</Button>
+                <Button onClick={props.onHide} className={` btn btn-light`}>Close</Button>
                 {/* <Button onClick={props.onHide} className={` ${styles.primarybtn}`}>Close</Button> */}
             </Modal.Footer>
         </Modal>

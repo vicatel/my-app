@@ -101,8 +101,6 @@ html {
   padding-left: 30%;
 }
 
-.nav-link {
-}
 
 
 
@@ -148,6 +146,22 @@ html {
   transform: translateZ(0);
 }
 
+.cursor {
+  background: white;
+  line-height: 14px;
+  margin-left: 1px;
+  animation: blink 0.8s infinite;
+  width: 3px;
+  height: 15px;
+  display: inline-block;
+}
+
+@keyframes blink {
+  0% {background: #222}
+  50% {background: white}
+  100% {background: #222}
+}
+
 
 @media (prefers-color-scheme: dark) {
   html {
@@ -191,4 +205,12 @@ html {
   .navbar-collapse {
     padding-left: 40% !important;
   }
+}
+
+.navbar-nav {
+  /* margin-left: 500px !important; */
+  /* margin-left: auto !important; */
+}
+.collapse {
+  /* padding-left: 400px !important; */
 }

@@ -12,9 +12,9 @@ const hm = Happy_Monkey({ subsets: ["latin"], weight: '400' });
 
 const NavbarComponent = () => {
   return (
-    <Navbar expand="lg" bg='dark' data-bs-theme="dark" className='text-light' >
+    <Navbar expand="lg" bg='' data-bs-theme="dark" className='text-dark' >
     <Container>
-      <Navbar.Brand className='text-light'  href="/">
+      <Navbar.Brand className='text-warning'  href="/">
       <Image
           className=""
           src="/avi.svg"
@@ -25,17 +25,26 @@ const NavbarComponent = () => {
           
         />
       </Navbar.Brand>
-      <Navbar.Toggle className='text-light'  aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse className='text-light'  id="basic-navbar-nav">
+      <Navbar.Toggle className='text-dark'  aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse className='text-warning'  id="basic-navbar-nav">
         {/* <Nav  className={hm.className + " me-auto text-light"} > */}
-        <Nav  className={ + " me-auto text-light"} >
+        <Nav  className={ + " me-auto text-warning"} >
           {/* <Nav.Link className="mx-3" href="/">Home</Nav.Link> */}
           <Nav.Link className="mx-3" href="/projects">Projects</Nav.Link>
           <Nav.Link className="mx-3" href="/certificates">Certificates</Nav.Link>
           <Nav.Link className="mx-3" href="/plans">Plans</Nav.Link>
           <Nav.Link className="mx-3" href="/skills">Skills</Nav.Link>
           <Nav.Link className="mx-3" target='_blank' href="/files/resume.pdf">Resume</Nav.Link>
-          {/* <NavDropdown className='text-light'  title="Dropdown" id="basic-nav-dropdown">
+    
+        </Nav>
+      </Navbar.Collapse>
+    </Container>
+  </Navbar>
+  );
+};
+
+export default NavbarComponent;
+      {/* <NavDropdown className='text-light'  title="Dropdown" id="basic-nav-dropdown">
             <NavDropdown.Item className='text-light' href="#action/3.1">Action</NavDropdown.Item>
             <NavDropdown.Item className='text-light'  href="#action/3.2">
               Another action
@@ -46,11 +55,3 @@ const NavbarComponent = () => {
               Separated link
             </NavDropdown.Item>
           </NavDropdown> */}
-        </Nav>
-      </Navbar.Collapse>
-    </Container>
-  </Navbar>
-  );
-};
-
-export default NavbarComponent;

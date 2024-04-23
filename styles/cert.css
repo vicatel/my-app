@@ -12,21 +12,27 @@ a {
     padding-top: .75rem;
     padding-bottom: .75rem;
     /* border: 0.1em dotted red; */
-    box-shadow: 1px 1px 2px 0px rgba(13, 26, 66, 0.95);
+    /* box-shadow: 1px 1px 2px 0px rgba(13, 26, 66, 0.95); */
     /* padding-left: 0px; */
     border-radius: 10px;
   }
   
   .certificate {
     border: 3px solid rgba(1, 11, 74, 0.757);
-    border-radius: 5px;
+    border-radius: 3px;
     transition: box-shadow 0.6s;
     width: 85%;
     padding: 0px 15px;
 
+    border-radius: 10px !important;
+    /* transition: box-shadow 0.6s; */
+    border-style: solid;
+    border-width: 2px;
+    border-image: linear-gradient(to right, rgba(1, 11, 74, 0.757) , #2d2b6c) 1;
+
   }
   .certificate:hover {
-    box-shadow: 0 0 10px 10px rgba(38, 69, 154, 0.95);
+    box-shadow: 0 0 7px 7px rgba(38, 69, 154, 0.95);
 
   }
   .progress-bar {
@@ -99,6 +105,19 @@ a {
     }
   } */
   
+  h1 {
+    /* background-image: linear-gradient(to right, rgba(1, 11, 74, 0.757) , #2d2b6c); */
+    /* background-image: linear-gradient(to right, #707af7,  rgba(1, 11, 74, 0.757) , #2d2b6c) !important; */
+    /* background-image: radial-gradient(circle, #707af7,   #2d2b6c) !important;
+     */
+  background-image: radial-gradient(circle, #2939ed,   #6462bd) !important;
+  /* background-image: linear-gradient(to right, #2939ed,   #6462bd) !important; */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent !important;
+    font-size: 3.5rem !important;
+    font-weight: 300 !important;
+  }
   /* Mobile */
   @media (max-width: 700px) {
     .row>div {

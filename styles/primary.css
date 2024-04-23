@@ -18,9 +18,11 @@ a {
 }
 
 .project {
-  border: 3px solid rgba(1, 11, 74, 0.757);
-  border-radius: 5px;
+  border: 4px solid rgba(1, 11, 74, 0.757);
+  border-radius: 10px;
   transition: box-shadow 0.6s;
+
+  
 }
 
 .project:hover {
@@ -70,7 +72,7 @@ details>p {
   transition: transform 0.8s;
 }
 
-svg {
+.alert-svg {
   height: 20px !important;
 }
 
@@ -81,12 +83,26 @@ svg {
   width: 50% !important;
 }
 
-
+#mobile {
+  max-height: 200px;
+  display: block;
+  margin-left: 30px;
+}
 
 nav > div > a:hover {
 border: 0px;
 }
-
+h1 {
+  /* background-image: linear-gradient(to right, rgba(1, 11, 74, 0.757) , #2d2b6c); */
+  /* background-image: linear-gradient(to right, #707af7,  rgba(1, 11, 74, 0.757) , #2d2b6c) !important; */
+  /* background-image: radial-gradient(circle, #707af7,   #2d2b6c) !important; */
+  background-image: radial-gradient(circle, #2939ed,   #6462bd) !important;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent !important;
+  font-size: 3.5rem !important;
+  font-weight: 300 !important;
+}
 /* h1 {
   animation: rotate 2s linear 1;
 }
@@ -100,6 +116,54 @@ border: 0px;
     transform: rotate(0deg);
   }
 } */
+
+
+
+.skills-div {
+  /* opacity: 0; */
+    /* position: relative; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* justify-content: space-evenly; */
+    height: 120px;
+    width: 160px;
+    border: double 3px transparent;
+    border-image-slice: 1;
+    /* border-width: 3px; */
+    background-image: linear-gradient(#000000, #000000,  #1a1a1a), radial-gradient(circle at top left, #51a2e9, #2d2b6c);
+    border-radius: 10px;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    transition: transform 0.2s, opacity 1.2s;
+    overflow: hidden;
+    margin: 5px 15px ;
+}
+.skills-div > img {
+  height: 75px;
+  width: 75px;
+  margin: 5px 0px;
+}
+.skills-div > p {
+  font-size: 1.0rem;
+}
+
+
+.modal-content {
+  background-color: #1a1a1a !important;
+  color: white !important;
+  max-width: 650px;
+}
+
+.btn-close {
+  background-color: white !important;
+  color: wheat !important;
+  display: none !important;
+}
+
+#next {
+filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70)
+}
 
 /* Mobile */
 @media (max-width: 700px) {
@@ -127,11 +191,7 @@ border: 0px;
     padding-left: 5px !important;
   }
 }
-#mobile {
-  max-height: 200px;
-  display: block;
-  margin-left: 30px;
-}
+
 
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1620px) {

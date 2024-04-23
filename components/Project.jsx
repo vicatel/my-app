@@ -1,6 +1,6 @@
 
 
-const ProjectCard = ({ title, tech, details, path, git, id }) => {
+const ProjectCard = ({ title, tech, details, path, git, id, show }) => {
     return (
         <>
 
@@ -25,7 +25,7 @@ const ProjectCard = ({ title, tech, details, path, git, id }) => {
                             </div>
                             <div className="row ">
                                 <div className="col-6">
-                                    <button className="btn btn-outline-dark text-light" >Development Process</button>
+                                    <button className="btn btn-outline-dark text-light" onClick={show} >Development Process</button>
                                 </div>
                                 <div className="col-6">
                                     <a href={path} target='_blank'>
