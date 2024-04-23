@@ -31,7 +31,8 @@ a {
 }
 
 strong {
-  color: rgba(38, 69, 154, 0.95);
+  /* color: rgba(38, 69, 154, 0.95); */
+  color: #707af7;
 }
 
 
