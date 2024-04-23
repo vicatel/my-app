@@ -10,8 +10,7 @@ import NavbarComponent from '@/components/NavBar';
 import Title from '@/components/Title';
 import { Bounce } from 'react-awesome-reveal';
 
-export default function Counter() {
-    const [count, setCount] = useState(0)
+export default function Skills() {
 
     return (
 
@@ -19,11 +18,6 @@ export default function Counter() {
             <NavbarComponent />
             <div className='px-5 my-3'>
                 <Title title="Skills" />
-
-
-                {/* <div className="vict" >
-                    COMING SOON
-                </div> */}
 
                 <div className='blur' > </div>
 
@@ -48,12 +42,10 @@ export default function Counter() {
                     <div className="skills-div text-center" style={{ display: "inline-block" }}><img src="/skills/dot-net-original.svg" alt=".NET" /><p className='text-light'>.NET</p></div>
                     <div className="skills-div text-center" style={{ display: "inline-block" }}><img src="/skills/docker-plain.svg" alt="Docker" /><p className='text-light'>Docker</p></div>
                     <div className='text-light'>
-                        {/* <i class='bx bxl-flask'></i> */}
                         <br />
                         <br />
                         <br />
                         <br />
-
                         <strong>
                             TECHNICAL SKILLS
                         </strong>
@@ -67,14 +59,6 @@ export default function Counter() {
 
                         : Python, JavaScript, TypeScript, HTML, CSS, C#, SQL, Dart
                         <br />
-                        {/* 
-                    <strong>
-                        FRAMEWORKS/TOOLS
-                    </strong>
-
-                    : React.js, Next.js, jQuery, Bootstrap, .NET , GraphQL, Figma, MongoDB, MySQL, Flask, Redux, Jenkins, Jira
-                    <br /> */}
-
                         <strong>
                             SOFT SKILLS
                         </strong>
@@ -84,40 +68,6 @@ export default function Counter() {
                     </div>
                 </div>
                 </Bounce>
-
-
-                {/* <strong>
-                        FRAMEWORKS/TOOLS
-                    </strong>
-
-                <div className='container'>
-                    <div className="skills-div text-center" style={{ display: "inline-block" }}><img src="/avi.svg" alt="HTML" /><p className='text-light'>HTML</p></div>
-                    <div className="skills-div text-center" style={{ display: "inline-block" }}><img src="/avi.svg" alt="HTML" /><p className='text-light'>HTML</p></div>
-                    <div className="skills-div text-center" style={{ display: "inline-block" }}><img src="/avi.svg" alt="HTML" /><p className='text-light'>HTML</p></div>
-                    <div className="skills-div text-center" style={{ display: "inline-block" }}><img src="/avi.svg" alt="HTML" /><p className='text-light'>HTML</p></div>
-                    <div className="skills-div text-center" style={{ display: "inline-block" }}><img src="/avi.svg" alt="HTML" /><p className='text-light'>HTML</p></div>
-                    <div className="skills-div text-center" style={{ display: "inline-block" }}><img src="/files/chatbot.gif" alt="HTML" /><p className='text-light'>HTML</p></div>
-                </div>
-
-                <strong>
-                        FRAMEWORKS/TOOLS
-                    </strong>
-
-                <div className='container'>
-                    <div className="skills-div text-center" style={{ display: "inline-block" }}><img src="/avi.svg" alt="HTML" /><p className='text-light'>HTML</p></div>
-                    <div className="skills-div text-center" style={{ display: "inline-block" }}><img src="/avi.svg" alt="HTML" /><p className='text-light'>HTML</p></div>
-                    <div className="skills-div text-center" style={{ display: "inline-block" }}><img src="/avi.svg" alt="HTML" /><p className='text-light'>HTML</p></div> */}
-                {/* <div className="skills-div text-center" style={{ display: "inline-block" }}><img src="/avi.svg" alt="HTML" /><p className='text-light'>HTML</p></div> */}
-                {/* <div className="skills-div text-center" style={{ display: "inline-block" }}><img src="/avi.svg" alt="HTML" /><p className='text-light'>HTML</p></div> */}
-                {/* <div className="skills-div text-center" style={{ display: "inline-block" }}><img src="/files/chatbot.gif" alt="HTML" /><p className='text-light'>HTML</p></div> */}
-                {/* </div> */}
-
-                {/* <div class="skills-div" style={{display: "inline-block"}}><img src="/avi.svg" alt="HTML" style={{height: "75px", width: "75px", margin: "10px 10px 0px"}}/><p><b>HTML</b></p></div> */}
-
-
-
-
-
             </div>
         </>
     )

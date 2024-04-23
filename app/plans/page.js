@@ -25,7 +25,6 @@ export default function Counter() {
 
 
                 <div className="vict text-light" >
-                    {/* MORE COMING SOON     */}
                 </div>
 
                 <div className='blur' > </div>
