@@ -5,7 +5,7 @@ const ProjectCard = ({ title, tech, details, path, git, id, show }) => {
         <>
 
             <div className="project ">
-                <div className="container  text-center ">
+                <div className="container project-card-body text-center ">
                     <div className="row ">
                         <div className="col-md-8">
 

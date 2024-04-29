@@ -26,7 +26,7 @@ a {
 .project:hover {
   box-shadow: 0 0 10px 10px rgba(38, 69, 154, 0.95);
   /* transform: scale(1.05); */
-  
+
 }
 
 strong {
@@ -34,10 +34,13 @@ strong {
   color: #707af7;
 }
 
-
-.container {
-  margin-left: 10px !important;
+.project-card-body {
+  padding-left: 4% !important;
 }
+
+/* .container {
+  margin-left: 10px !important;
+} */
 
 details>summary {
   /* padding: 4px; */
@@ -199,6 +202,11 @@ h1 {
 
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1620px) {}
+@media (min-width: 1600px)  {
+  .project-card-body {
+    padding-left: 8% !important;
+  }
+}
 
 @media (min-width: 901px) and (max-width: 1620px) {
   details {
