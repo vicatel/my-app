@@ -34,14 +34,16 @@ strong {
   color: #707af7;
 }
 
-.project-card-body {
-  padding-left: 4% !important;
+
+
+ .project-card-body {
+  /* padding-left: 10% !important; */
+  /* background-color: #51a2e9 !important; */
+
 }
-
-/* .container {
+.container {
   margin-left: 10px !important;
-} */
-
+}
 details>summary {
   /* padding: 4px; */
   width: 200px;
