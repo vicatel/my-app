@@ -186,7 +186,7 @@ html {
 
   @media (hover: hover) and (pointer: fine) and (min-width: 1600px) {
     .zoom-image:hover {
-      transform: scale(2.2) translateX(-50px) translateY(-30px);
+      transform: scale(2.05) translateX(-35px) translateY(-20px);
   
       /* Zoom in by 10% */
       /* padding-right: 5%; */

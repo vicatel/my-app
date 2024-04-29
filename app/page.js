@@ -127,13 +127,13 @@ export default function Home() {
           </a>
 
           <a
-            href="/skills"
+            href="/about"
             className={styles.card}
 
             rel="noopener noreferrer"
           >
             <h2>
-              Skills <span>-&gt;</span>
+              About Me <span>-&gt;</span>
             </h2>
 
           </a>
