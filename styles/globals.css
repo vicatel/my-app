@@ -1,4 +1,3 @@
-
 :root {
   --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 0, 0, 0;
@@ -12,33 +11,31 @@
     rgba(1, 65, 255, 0),
     rgba(1, 65, 255, 0.3)
   ); */
-  --secondary-glow: linear-gradient(
-    to bottom right,
-    rgba(1, 65, 255, 0),
-  
-    rgba(1, 65, 255, 0.3)
-  );
+  --secondary-glow: linear-gradient(to bottom right,
+      rgba(1, 65, 255, 0),
+
+      rgba(1, 65, 255, 0.3));
 
   --tile-start-rgb: 2, 13, 46;
   --tile-end-rgb: 2, 5, 19;
-  --tile-border: conic-gradient(
-    #ffffff80,
-    #ffffff40,
-    #ffffff30,
-    #ffffff20,
-    #ffffff10,
-    #ffffff10,
-    #ffffff80
-  );
+  --tile-border: conic-gradient(#ffffff80,
+      #ffffff40,
+      #ffffff30,
+      #ffffff20,
+      #ffffff10,
+      #ffffff10,
+      #ffffff80);
 
   --callout-rgb: 20, 20, 20;
   --callout-border-rgb: 108, 108, 108;
   --card-rgb: 100, 100, 100;
   --card-border-rgb: 200, 200, 200;
 }
+
 html {
   color-scheme: dark;
 }
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -46,24 +43,20 @@ html {
     --background-end-rgb: 0, 0, 0;
 
     --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
-    --secondary-glow: linear-gradient(
-      to bottom right,
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0.3)
-    );
+    --secondary-glow: linear-gradient(to bottom right,
+        rgba(1, 65, 255, 0),
+        rgba(1, 65, 255, 0),
+        rgba(1, 65, 255, 0.3));
 
     --tile-start-rgb: 2, 13, 46;
     --tile-end-rgb: 2, 5, 19;
-    --tile-border: conic-gradient(
-      #ffffff80,
-      #ffffff40,
-      #ffffff30,
-      #ffffff20,
-      #ffffff10,
-      #ffffff10,
-      #ffffff80
-    );
+    --tile-border: conic-gradient(#ffffff80,
+        #ffffff40,
+        #ffffff30,
+        #ffffff20,
+        #ffffff10,
+        #ffffff10,
+        #ffffff80);
 
     --callout-rgb: 20, 20, 20;
     --callout-border-rgb: 108, 108, 108;
@@ -83,6 +76,7 @@ body {
   max-width: 100vw;
   /* overflow-x: hidden; */
 }
+
 body {
   background-color: rgb(0, 0, 0) !important;
 }
@@ -157,9 +151,17 @@ html {
 }
 
 @keyframes blink {
-  0% {background: #222}
-  50% {background: white}
-  100% {background: #222}
+  0% {
+    background: #222
+  }
+
+  50% {
+    background: white
+  }
+
+  100% {
+    background: #222
+  }
 }
 
 
@@ -169,16 +171,31 @@ html {
   }
 }
 
+
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
-  
+
   .zoom-image:hover {
-    transform: scale(2);
+    transform: scale(1.8) translateX(-25px) translateY(-20px);
+
     /* Zoom in by 10% */
-    padding-right: 10%;
+    /* padding-right: 5%; */
+
   }
 
-  .nav-link:hover, .col-6 > a:hover {
+  @media (hover: hover) and (pointer: fine) and (min-width: 1600px) {
+    .zoom-image:hover {
+      transform: scale(2.2) translateX(-50px) translateY(-30px);
+  
+      /* Zoom in by 10% */
+      /* padding-right: 5%; */
+  
+    }
+  }
+
+  .nav-link:hover,
+  .col-6>a:hover {
     /* background-color: aqua; */
     /* transform: translateY(-5px); */
     transform: translateY(-5px);
@@ -192,7 +209,7 @@ html {
     border: 1px solid rgba(var(--card-border-rgb), 0.15);
   }
 
- 
+
 
 }
 
@@ -201,7 +218,8 @@ html {
     padding-left: 0% !important;
   }
 }
-@media (min-width: 1650px) and (max-width: 2200px)  {
+
+@media (min-width: 1650px) and (max-width: 2200px) {
   .navbar-collapse {
     padding-left: 40% !important;
   }
@@ -211,6 +229,7 @@ html {
   /* margin-left: 500px !important; */
   /* margin-left: auto !important; */
 }
+
 .collapse {
   /* padding-left: 400px !important; */
 }

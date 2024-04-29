@@ -37,13 +37,9 @@ export default function Projects() {
 
                 {/* <Fade cascade={true} damping={0.1} duration={5000}> */}
                 <Zoom triggerOnce={true}>
-                    <ProjectCard title={"Surprise Me!"} tech={"NextJS, PostgreSQL to store info, Supabase (Backend as a Service)"} details={"Lightweight fullstack app for friends & family."} path={"files/surprise.gif"} git={"https://github.com/vicatel/surprise-me-public.git"} id={"mobile"} show={() => setModalShow(true)} />
-                    <ProjectCard title={"Chatbot App"} tech={"NextJS, Flask for Python backend, MySQL to store info"} details={"Made a fullstack app for a school project."} path={"files/chatbot.gif"} git={"https://github.com/vicatel/seii-project.git"} show={() => setModalShow(true)} />
-
-                    <ProjectCard title={"Simple Flashcards"} tech={"Reach,ViteJS"}
-                        details={"Simple React Components (from CodePath)"} path={"files/flashcard.gif"} show={() => setModalShow(true)} />
-
-
+                    <ProjectCard title={"Surprise Me!"} tech={"NextJS, PostgreSQL to store info, Supabase (Backend as a Service)"} details={"A gift-giving app created for family and friends. Designed and developed a lightweight full-stack web app using Figma, Next.js, and Supabase. Users can create and share gift lists, track gift ideas. Implemented authentication using JWT for enhanced security"} path={"files/surprise.gif"} git={"https://github.com/vicatel/surprise-me-public.git"} id={"mobile"} show={() => setModalShow(true)} />
+                    <ProjectCard title={"Chatbot App"} tech={"NextJS, Flask for Python backend, MySQL to store info"} details={"Designed and developed a chatbot web application using React for the frontend, Flask for the backend API services, and MySQL for storing and managing user conversations. "} path={"files/chatbot.gif"} git={"https://github.com/vicatel/seii-project.git"} show={() => setModalShow(true)} />
+                    <ProjectCard title={"Yummly"} tech={" VanillaJS. Built on Firebase."} details={" Collaborated with a team of five to create a recipe sharing app, utilizing Firebase for cloud functions "} path={"files/yummly.gif"} git={"https://github.com/RobbyRamana/YummlyBearsRecipeApp.git"} show={() => setModalShow(true)} />
 
                 </Zoom>
                 <div className="alert alert-light d-flex align-items-center  mb-4" role="alert">
@@ -57,6 +53,8 @@ export default function Projects() {
                 <Title title="Other Projects, Relevant tutorials & Lessons Learned" />
                 <ProjectCard title={"Rockets API"} tech={"React, ViteJS"}
                     details={"Using Routes and Making API calls"} path={"files/rocket.gif"} show={() => setModalShow(true)} />
+                <ProjectCard title={"Simple Flashcards"} tech={"Reach,ViteJS"}
+                    details={"Simple React Components (from CodePath)"} path={"files/flashcard.gif"} show={() => setModalShow(true)} />
             </div>
 
 

@@ -4,7 +4,7 @@ const ProjectCard = ({ title, tech, details, path, git, id, show }) => {
     return (
         <>
 
-            <div className="project my-5">
+            <div className="project ">
                 <div className="container  text-center ">
                     <div className="row ">
                         <div className="col-md-8">
