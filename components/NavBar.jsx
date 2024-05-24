@@ -34,7 +34,7 @@ const NavbarComponent = () => {
           <Nav.Link className="mx-3" href="/certificates">Certificates</Nav.Link>
           <Nav.Link className="mx-3" href="/plans">Plans</Nav.Link>
           <Nav.Link className="mx-3" href="/about">About</Nav.Link>
-          <Nav.Link className="mx-3" target='_blank' href="/files/resume.pdf">Resume</Nav.Link>
+          {/* <Nav.Link className="mx-3" target='_blank' href="/files/resume.pdf">Resume</Nav.Link> */}
     
         </Nav>
       </Navbar.Collapse>
